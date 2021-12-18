@@ -151,6 +151,16 @@ namespace Boolean
             bool V = A == B || A == C || B == C;
             Console.WriteLine(V);
         }
+        static void Boolean19()
+        {
+            int A = int.Parse(Console.ReadLine());
+            int B = int.Parse(Console.ReadLine());
+            int C = int.Parse(Console.ReadLine());
+            bool V = A == -B || A == -C || B == -C;
+            bool L = B == -A || C == -A || C == -B;
+            bool N = V || L;
+            Console.WriteLine(N);
+        }
         static void Boolean20()
         {
             int A = int.Parse(Console.ReadLine());
@@ -187,7 +197,11 @@ namespace Boolean
         }
         static void Boolean24()
         {
-
+            int A = int.Parse(Console.ReadLine());
+            int B = int.Parse(Console.ReadLine());
+            int C = int.Parse(Console.ReadLine());
+            bool V = ((B * B) - (4 * A * C)) >= 0;
+            Console.WriteLine(V);
         }
     }
 }
